@@ -3,12 +3,13 @@ require 'pry'
 class Fields
   @@fields = []
 
+  attr_reader :type, :hectacres
   def initialize(type, hectacres)
     @type = type
     @hectacres = hectacres
   end
 
-  def self.add_feild(type, hectacres)
+  def self.add_field(type, hectacres)
     new_field = Fields.new(type, hectacres)
     @@fields << new_field
   end
@@ -25,7 +26,9 @@ class Fields
 end
 
 
-field1 = Fields.add_feild("wheat", 50)
+field1 = Fields.add_field("wheat", 50)
 puts Fields.all
+
+puts "====================="
 
 puts Fields.relax
