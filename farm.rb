@@ -2,6 +2,7 @@ require 'pry'
 require_relative 'field'
 
 class Farms
+
  def options
    while true
      print_options
@@ -28,4 +29,17 @@ class Farms
    when "exit" then exit
    end
  end
+
+ def plant_fields
+   puts "Enter type:"
+   type = gets.chomp
+   puts "Enter size:"
+   hectacres = gets.chomp
+   Fields.add_field(type, hectacres)
+   puts "Added 1 field of #{type} at #{hectacres} hectacres."
+ end
+
 end
+
+farm1 = Farms.new
+farm1.options
