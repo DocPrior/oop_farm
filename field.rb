@@ -39,20 +39,20 @@ class Fields
 end
 
 
-field1 = Fields.add_field("wheat", 50)
-field2 = Fields.add_field("wheat", 50)
-field3 = Fields.add_field("wheat", 50)
-field4 = Fields.add_field("wheat", 50)
-
-puts "====================="
-
-puts Fields.relax
-
-puts "========================="
-
-Fields.harvest
-Fields.relax
-
-puts "======================="
-
-Fields.status
+# field1 = Fields.add_field("wheat", 50)
+# field2 = Fields.add_field("wheat", 50)
+# field3 = Fields.add_field("wheat", 50)
+# field4 = Fields.add_field("wheat", 50)
+#
+# puts "====================="
+#
+# puts Fields.relax
+#
+# puts "========================="
+#
+# Fields.harvest
+# Fields.relax
+#
+# puts "======================="
+#
+# Fields.status
