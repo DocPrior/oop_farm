@@ -25,7 +25,7 @@ class Farms
    when "field" then plant_fields
    when "harvest" then harvest_crop
    when "status" then farm_status
-   when "relax" then feild status
+   when "relax" then field_status
    when "exit" then exit
    end
  end
@@ -43,6 +43,13 @@ class Farms
    Fields.harvest
  end
 
+ def farm_status
+   Fields.status
+ end
+
+ def field_status
+   Fields.relax
+ end
 end
 
 farm1 = Farms.new
