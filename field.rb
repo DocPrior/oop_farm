@@ -27,9 +27,10 @@ class Fields
 
   def self.harvest
     @@fields.each do |field|
-      @@the_harvest += field.hectacres
+      @@the_harvest += field.hectacres.to_i
     end
     @@the_harvest
+    puts "Harvested #{@@the_harvest}  units of food harvested"
   end
 
   def self.status

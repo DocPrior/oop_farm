@@ -39,6 +39,10 @@ class Farms
    puts "Added 1 field of #{type} at #{hectacres} hectacres."
  end
 
+ def harvest_crop
+   Fields.harvest
+ end
+
 end
 
 farm1 = Farms.new
